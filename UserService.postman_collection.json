@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "9b922f93-f19f-4791-9a14-a9c196891a98",
+		"name": "UserService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44371/api/users",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44371",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44371/api/users/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44371",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Pawan\",\r\n    \"lastName\": \"Nagpal\",\r\n    \"userName\": \"pnagpal\",\r\n    \"email\": \"pawansingh@hotmail.com\",\r\n    \"password\": \"$pawanuserAbcd!!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44371/api/users/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44371",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"userId\": 9,\r\n        \"lastName\": \"Nagpaal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44371/api/users/9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44371",
+					"path": [
+						"api",
+						"users",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44371/api/users/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44371",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
